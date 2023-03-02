@@ -17,7 +17,7 @@ def merge_sort(values: list):
     values_half2 = merge_sort(values[middle:])
     result = []
     while values_half1 and values_half2:
-        if values_half1[0] < values_half2[0]:
+        if values_half1[0] < values_half2[0]: # 내림차순으로 정렬하려면 부등호를 '>'로 바꾼다.
             pick = values_half1.pop(0)
         else:
             pick = values_half2.pop(0)
